@@ -117,19 +117,7 @@ contract EventTickets {
             emit LogBuyTickets(msg.sender, ticketsBought);
             return true;
         }
-      /*function buyTickets(uint ticketsBought)  public payable returns (uint numOfTickets){
-          require(msg.value >= (ticketsBought * TICKET_PRICE));
-          require(ticketsBought < myEvent.totalTickets);
-          require(myEvent.isOpen == true);
-          myEvent.buyers[msg.sender] = numOfTickets;
-          uint sales = ticketsBought * TICKET_PRICE;
-          uint refundAmount = msg.value - sales;
-          msg.sender.transfer(refundAmount);
-          numOfTickets = numOfTickets - ticketsBought;
-          emit LogBuyTickets(msg.sender, ticketsBought);
-          return numOfTickets;
-
-      }*/
+    
 
     /*
         Define a function called getRefund().
